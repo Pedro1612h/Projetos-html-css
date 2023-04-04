@@ -1,7 +1,23 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap' );
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 *{
     margin: 0px;
+}
+html, body{
+    min-height: 100%;
+    background-color: black;
+    font-family: var(--fonte1);
+    
 }
 header{
     background-color: black;
@@ -16,6 +32,8 @@ h1{
     padding: 10px;
 
     transform:  translate(0%, 60%);
+    font-variant: small-caps;
+    font-family: var(--fonte2);
 
 }
 header > p{
@@ -31,9 +49,16 @@ header a{
     font-weight: 700;
     
 }
+header a:hover{
+    text-decoration: underline;
+}
 main{
-    padding: 50px;
+    background-color: white;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     padding-left: 20px;
+    font-family: var(--fonte3);
+    font-size: 1vw;
 }    
 article{
     width: 400px;
@@ -51,11 +76,13 @@ article p{
     background-size: 100%;
     background-attachment: fixed;
     color: white;
-    min-width: 485px;
+    width: 100%;
+    
     
 }
 .fundo1 article{
     background-color: rgba(0, 0, 0, 0.500);
+    display: inline-block;
 
 }
 .fundo2{
@@ -64,10 +91,12 @@ article p{
     background-size: 100%;
     background-attachment: fixed;
     color: white;
-    min-width: 485px;
+    
 }
 .fundo2 article{
     background-color: rgba(0, 0, 0, 0.500);
+    display: inline-block;
+    
     
 }
 footer{
@@ -81,4 +110,7 @@ footer p{
 footer a{
     text-decoration: none;
     color: white;
+}
+footer a:hover{
+    text-decoration: underline;
 }
